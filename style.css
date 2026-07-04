@@ -97,27 +97,15 @@ body {
   color: var(--color-accent-dark);
 }
 
-/* Photo placeholders (CSS-generated, no external images) */
+/* Real photos (downloaded into image/) */
 
-.ph-img {
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 4px;
-  background-size: cover;
 }
-
-.ph-img--sky { background: linear-gradient(160deg, #dff2fa 0%, #9fd6ec 45%, #4fb3d9 100%); }
-.ph-img--leaf { background: linear-gradient(160deg, #e4f5f7 0%, #b7e3ec 50%, #6ec6dd 100%); }
-.ph-img--code { background: linear-gradient(135deg, #e8f7fb, #a9dcee); }
-.ph-img--api { background: linear-gradient(135deg, #e0f3f8, #8fd2ea); }
-.ph-img--perf { background: linear-gradient(135deg, #eaf8fb, #b3e2ef); }
-.ph-img--stack { background: linear-gradient(135deg, #e6f6fa, #9adbee); }
-.ph-img--review { background: linear-gradient(135deg, #e2f4f9, #83cee8); }
-.ph-img--team { background: linear-gradient(135deg, #ecf9fb, #b9e4f0); }
-.ph-img--work1 { background: linear-gradient(135deg, #d8f0f8, #6fc4e0); }
-.ph-img--work2 { background: linear-gradient(135deg, #e0f4f9, #7fcbe4); }
-.ph-img--work3 { background: linear-gradient(135deg, #e6f6fa, #94d5ea); }
-.ph-img--work4 { background: linear-gradient(135deg, #ddf1f8, #66c1de); }
-.ph-img--work5 { background: linear-gradient(135deg, #eaf8fb, #a2ddee); }
-.ph-img--work6 { background: linear-gradient(135deg, #e3f5f9, #7ecde6); }
 
 /* About */
 
