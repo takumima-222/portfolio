@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takumi Suzuki | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Takumi Suzuki</h1>
+      <nav>
+        <button id="nav-toggle" class="nav-toggle" aria-label="メニューを開く">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>ソフトウェアエンジニアとして、Webアプリケーションの開発をしています。</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <ul class="project-list">
+          <li class="project-card">
+            <h3>Sample Project</h3>
+            <p>これは最初のポートフォリオサイトのサンプルプロジェクトです。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <label for="email">メールアドレス</label>
+          <input type="text" id="email" name="email" placeholder="you@example.com" required>
+          <button type="submit">送信</button>
+        </form>
+        <p id="form-message" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Takumi Suzuki</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
