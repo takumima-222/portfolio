@@ -14,7 +14,8 @@
         <button id="nav-toggle" class="nav-toggle" aria-label="メニューを開く">☰</button>
         <ul id="nav-menu" class="nav-menu">
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#works">Works</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -22,31 +23,151 @@
   </header>
 
   <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>ソフトウェアエンジニアとして、Webアプリケーションの開発をしています。</p>
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="ph-img ph-img--sky about-img about-img--left"></div>
+        <div class="about-body">
+          <h2 class="section-title">ABOUT</h2>
+          <p>
+            Takumi Suzuki は、Webアプリケーション開発を専門とするソフトウェアエンジニアです。<br>
+            事業会社で5年間エンジニアとして勤務し、2023年にフリーランスとして独立しました。
+          </p>
+          <p>
+            わかりやすく使いやすいプロダクト作りを得意としています。<br>
+            中小企業・スタートアップの新規開発や改善のお手伝いができれば嬉しいです。<br>
+            （もちろん個人開発のご相談も大歓迎です！）
+          </p>
+          <a class="view-more" href="#service">
+            <span>VIEW MORE</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+        <div class="ph-img ph-img--leaf about-img about-img--right"></div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="service" class="section service">
       <div class="container">
-        <h2>Projects</h2>
-        <ul class="project-list">
-          <li class="project-card">
-            <h3>Sample Project</h3>
-            <p>これは最初のポートフォリオサイトのサンプルプロジェクトです。</p>
-          </li>
-        </ul>
+        <h2 class="section-title">SERVICE</h2>
+
+        <div class="service-group">
+          <span class="group-label">Development</span>
+          <div class="card-grid">
+            <article class="card">
+              <div class="ph-img ph-img--code card-thumb"></div>
+              <h3 class="card-title">Webアプリ開発</h3>
+              <p>要件整理からUI設計、実装まで一貫してWebアプリケーションを開発いたします。</p>
+            </article>
+            <article class="card">
+              <div class="ph-img ph-img--api card-thumb"></div>
+              <h3 class="card-title">API設計・開発</h3>
+              <p>堅牢で拡張しやすいAPIの設計・実装を行います。</p>
+            </article>
+            <article class="card">
+              <div class="ph-img ph-img--perf card-thumb"></div>
+              <h3 class="card-title">パフォーマンス改善</h3>
+              <p>表示速度や処理速度のボトルネックを調査し、改善提案・実装を行います。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="service-group">
+          <span class="group-label">Consulting</span>
+          <div class="card-grid">
+            <article class="card">
+              <div class="ph-img ph-img--stack card-thumb"></div>
+              <h3 class="card-title">技術選定支援</h3>
+              <p>プロジェクトの要件に合わせた技術スタックの選定をサポートします。</p>
+            </article>
+            <article class="card">
+              <div class="ph-img ph-img--review card-thumb"></div>
+              <h3 class="card-title">コードレビュー</h3>
+              <p>既存コードの品質向上のためのレビュー・改善提案を行います。</p>
+            </article>
+            <article class="card">
+              <div class="ph-img ph-img--team card-thumb"></div>
+              <h3 class="card-title">チーム開発支援</h3>
+              <p>開発フローの整備やドキュメント化など、チーム開発をサポートします。</p>
+            </article>
+          </div>
+        </div>
+
+        <a class="view-more view-more--right" href="#works">
+          <span>SERVICE &amp; PRICE</span>
+          <span class="arrow">→</span>
+        </a>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="works" class="section works">
       <div class="container">
-        <h2>Contact</h2>
+        <h2 class="section-title">WORKS</h2>
+        <p class="works-lead">これまでに手がけた制作実績の一部です。タブで種類ごとに絞り込めます。</p>
+
+        <div class="work-tabs" role="tablist" aria-label="works filter">
+          <button type="button" class="work-tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button type="button" class="work-tab" role="tab" aria-selected="false" data-filter="web">Web App</button>
+          <button type="button" class="work-tab" role="tab" aria-selected="false" data-filter="tool">Tool</button>
+          <button type="button" class="work-tab" role="tab" aria-selected="false" data-filter="oss">OSS</button>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" data-category="web">
+            <div class="ph-img ph-img--work1 work-thumb"></div>
+            <span class="work-tag">Web App</span>
+            <h3 class="card-title">在庫管理システム</h3>
+            <p>中小企業向けの在庫管理Webアプリを設計・開発しました。</p>
+          </article>
+          <article class="work-card" data-category="web">
+            <div class="ph-img ph-img--work2 work-thumb"></div>
+            <span class="work-tag">Web App</span>
+            <h3 class="card-title">予約管理ダッシュボード</h3>
+            <p>予約状況をリアルタイムに可視化するダッシュボードを構築しました。</p>
+          </article>
+          <article class="work-card" data-category="tool">
+            <div class="ph-img ph-img--work3 work-thumb"></div>
+            <span class="work-tag">Tool</span>
+            <h3 class="card-title">CLIタスクランナー</h3>
+            <p>リポジトリの定型作業を自動化するCLIツールを開発しました。</p>
+          </article>
+          <article class="work-card" data-category="tool">
+            <div class="ph-img ph-img--work4 work-thumb"></div>
+            <span class="work-tag">Tool</span>
+            <h3 class="card-title">画像リサイズ支援ツール</h3>
+            <p>デザイナー向けに画像の一括リサイズ・変換を行うツールを提供しました。</p>
+          </article>
+          <article class="work-card" data-category="oss">
+            <div class="ph-img ph-img--work5 work-thumb"></div>
+            <span class="work-tag">OSS</span>
+            <h3 class="card-title">フォームバリデーションライブラリ</h3>
+            <p>軽量なフォームバリデーションライブラリをOSSとして公開しています。</p>
+          </article>
+          <article class="work-card" data-category="oss">
+            <div class="ph-img ph-img--work6 work-thumb"></div>
+            <span class="work-tag">OSS</span>
+            <h3 class="card-title">ロギングユーティリティ</h3>
+            <p>構造化ログ出力を簡単に行うユーティリティを公開しています。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-banner">
+        <span>CONTACT</span>
+      </div>
+      <div class="container contact-body">
+        <p>制作のご相談、お見積り依頼等、お気軽にご連絡ください。</p>
         <form id="contact-form">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" placeholder="山田 太郎">
+
           <label for="email">メールアドレス</label>
           <input type="text" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" rows="4" placeholder="お問い合わせ内容をご記入ください"></textarea>
+
           <button type="submit">送信</button>
         </form>
         <p id="form-message" role="status"></p>

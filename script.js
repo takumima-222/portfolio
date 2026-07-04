@@ -30,10 +30,35 @@ function initContactForm() {
   });
 }
 
+function initWorksTabs() {
+  const tabs = document.querySelectorAll(".work-tab");
+  const cards = document.querySelectorAll(".work-card");
+  if (!tabs.length || !cards.length) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const filter = tab.dataset.filter;
+
+      tabs.forEach((t) => {
+        t.classList.remove("is-active");
+        t.setAttribute("aria-selected", "false");
+      });
+      tab.classList.add("is-active");
+      tab.setAttribute("aria-selected", "true");
+
+      cards.forEach((card) => {
+        const matches = filter === "all" || card.dataset.category === filter;
+        card.classList.toggle("is-hidden", !matches);
+      });
+    });
+  });
+}
+
 if (typeof document !== "undefined") {
   document.addEventListener("DOMContentLoaded", () => {
     initNavToggle();
     initContactForm();
+    initWorksTabs();
   });
 }
 
